@@ -1,0 +1,25 @@
+.background{
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    padding: none;
+    object-fit: cover;
+    z-index: -1;  /*img will be behind our content */
+}
+
+@keyframes fadeIn{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+.fade-in{
+    animation: fadeIn 500ms ease-in-out;
+}
